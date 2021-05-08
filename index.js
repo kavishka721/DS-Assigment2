@@ -35,11 +35,11 @@ else
 app.get('/', (req, res) => res.send('Hello World with Express'));
 
 // Import routes
-let apiRoutes = require("./api-routes");
+let apiRoutes = require("./routes/api-routes");
 // Use api routes in the App
 app.use('/api', apiRoutes);
 
-let mobileApiRoutes = require('./mobilePayments/mobile-api-routes');
+let mobileApiRoutes = require('./routes/mobile-api-routes');
 
 app.use('/mobile', mobileApiRoutes);
 
