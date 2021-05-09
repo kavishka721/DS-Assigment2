@@ -45,8 +45,8 @@ app.use('/mobile', mobileApiRoutes);
 
 
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey('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') //process.env.SENDGRID_API_KEY 
-const msg = {
+sgMail.setApiKey(process.env.SENDGRID_API_KEY); 
+const msg = {) //
   to: 'kavishka.kolamunna1@gmail.com', // Change to your recipient
   from: 'techgadget1100@gmail.com', // Change to your verified sender
   subject: 'Order is confirmed.',
