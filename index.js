@@ -46,7 +46,7 @@ app.use('/mobile', mobileApiRoutes);
 
 const sgMail = require('@sendgrid/mail')
 //there should be the api key
-const msg = {) //
+const msg = { //
   to: 'kavishka.kolamunna1@gmail.com', // Change to your recipient
   from: 'techgadget1100@gmail.com', // Change to your verified sender
   subject: 'Order is confirmed.',
